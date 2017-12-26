@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo搭建博客 | DmBlog</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Hexo搭建Blog安装node.js，Hexo，Git 安装node.js 安装Hexo：或在node.js下使用命令npm install hexo-cli -g安装 安装Git：Git使用教程  初始化Hexo 新建一个文件夹Blog（名字随你取）这是博客目录 打开node.js黑窗窗，cd 进入Blog目录 初始化：命令hexo init 执行 命令 npm install 初始化后在Bl">
+<meta name="keywords" content="博客搭建">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo搭建博客">
+<meta property="og:url" content="http://yoursite.com/2017/02/25/blog搭建/index.html">
+<meta property="og:site_name" content="DmBlog">
+<meta property="og:description" content="Hexo搭建Blog安装node.js，Hexo，Git 安装node.js 安装Hexo：或在node.js下使用命令npm install hexo-cli -g安装 安装Git：Git使用教程  初始化Hexo 新建一个文件夹Blog（名字随你取）这是博客目录 打开node.js黑窗窗，cd 进入Blog目录 初始化：命令hexo init 执行 命令 npm install 初始化后在Bl">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="d:/img/blogContext.PNG">
+<meta property="og:image" content="d:/img/localhostRun.PNG">
+<meta property="og:image" content="d:/img/firstBlog.PNG">
+<meta property="og:image" content="d:/img/Mytheme.PNG">
+<meta property="og:updated_time" content="2017-12-25T08:42:53.253Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo搭建博客">
+<meta name="twitter:description" content="Hexo搭建Blog安装node.js，Hexo，Git 安装node.js 安装Hexo：或在node.js下使用命令npm install hexo-cli -g安装 安装Git：Git使用教程  初始化Hexo 新建一个文件夹Blog（名字随你取）这是博客目录 打开node.js黑窗窗，cd 进入Blog目录 初始化：命令hexo init 执行 命令 npm install 初始化后在Bl">
+<meta name="twitter:image" content="d:/img/blogContext.PNG">
+  
+    <link rel="alternative" href="/atom.xml" title="DmBlog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=737481107,1375959674&fm=27&gp=0.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  
+      <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("your_app_id", "your_app_key");</script>
+<script src="/js/Counter.js"></script>
+  
+</head>
+
+
+
+
+
+
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay">
+
+
+  <div align="center"><p style="color:#FFFFFF;font-size:90%">您是第
+<a href="http://www.amazingcounters.com">
+<img border="0" src="http://cc.amazingcounters.com/counter.php?i=3219318&c=9658267" alt="AmazingCounters.com">
+</a>
+个访客
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/touxiang.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">邓敏的博客</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">923039790@qq.com</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">目录</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="qq" target="_blank" href="https://user.qzone.qq.com/923039790/main" title="qq">qq</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/5511332529/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo">weibo</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/hexo配置/" style="font-size: 10px;">hexo配置</a> <a href="/tags/博客搭建/" style="font-size: 10px;">博客搭建</a> <a href="/tags/配置-协议/" style="font-size: 10px;">配置,协议</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/DmForInnovate/DmForInnovate.github.io">DmForInnovate</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">一位资深的IT大佬,哈哈哈哈 &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=281 height=52 src=&#34;//music.163.com/outchain/player?type=2&amp;id=513791211&amp;auto=1&amp;height=32&#34;&gt;&lt;/iframe&gt;</div>
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">邓敏的博客</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/touxiang.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">邓敏的博客</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">923039790@qq.com</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">目录</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="qq" target="_blank" href="https://user.qzone.qq.com/923039790/main" title="qq">qq</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/5511332529/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo">weibo</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap">
+
+
+
+<article id="post-blog搭建" class="article article-type-post" itemscope itemprop="blogPost">
+
+
+
+
+  
+    <div class="article-meta">
+      <a href="/2017/02/25/blog搭建/" class="article-date">
+  	<time datetime="2017-02-25T06:39:33.000Z" itemprop="datePublished">2017-02-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo搭建博客
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客搭建/">博客搭建</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/hexo/">hexo</a>
+	</div>
+
+
+        
+          
+
+
+<div class="counter-tag counter">
+    <span id="/2017/02/25/blog搭建/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="Hexo搭建博客">
+         &nbsp;
+        view
+    </span>
+</div>
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Hexo搭建Blog"><a href="#Hexo搭建Blog" class="headerlink" title="Hexo搭建Blog"></a>Hexo搭建Blog</h1><h2 id="安装node-js，Hexo，Git"><a href="#安装node-js，Hexo，Git" class="headerlink" title="安装node.js，Hexo，Git"></a>安装node.js，Hexo，Git</h2><ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">安装node.js</a></li>
+<li><a href="https://hexo.io/" target="_blank" rel="noopener">安装Hexo</a>：或在node.js下使用命令npm install hexo-cli -g安装</li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">安装Git</a>：<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">Git使用教程</a></li>
+</ul>
+<h2 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h2><ul>
+<li>新建一个文件夹Blog（名字随你取）这是博客目录</li>
+<li>打开node.js黑窗窗，cd 进入Blog目录</li>
+<li>初始化：命令<code>hexo init</code></li>
+<li>执行 命令 <code>npm install</code><ul>
+<li>初始化后在Blog目录下会生成以下文件<br><img src="d:/img/blogContext.PNG" alt="loading......"></li>
+</ul>
+</li>
+<li>执行命令<code>hexo s -g</code><ul>
+<li>如图<br><img src="d:/img/localhostRun.PNG" alt="loading......"></li>
+</ul>
+</li>
+<li>在浏览器地址栏输入<a href="http://localhost:4040/" target="_blank" rel="noopener">http://localhost:4040/</a><ul>
+<li>你将看到<br><img src="d:/img/firstBlog.PNG" alt="loading......"></li>
+<li>太丑，显然连微操都打不到 next–</li>
+</ul>
+</li>
+</ul>
+<h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><ul>
+<li>next主题github地址：<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">here</a> </li>
+<li>第一次搭建推荐使用 next主题</li>
+<li>其他主题下载：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">here</a></li>
+<li>下载后解压到 Blog&gt;theme目录下</li>
+</ul>
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><ul>
+<li>Next主题<ul>
+<li>this mytheme<br><img src="d:/img/Mytheme.PNG" alt="loading......"></li>
+<li><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next主题详解</a> 上面写的很详细</li>
+</ul>
+</li>
+</ul>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><ul>
+<li>创建github账号</li>
+<li>新建一个仓库 命名：用户名.github.io</li>
+<li>打开Blog下的  config.yml文件<ul>
+<li>配置deploy：字段</li>
+<li>deploy:<br>type: git<br>repo: git@github.com:DmForInnovate/DmForInnovate.github.io.git<br>这里的repo名要设为自己创建GitHub时的用户名，我的是DmForInnovate</li>
+</ul>
+</li>
+<li>下载自动发布工具<ul>
+<li>在Blog目录 git bash </li>
+<li>命令：<code>npm install hexo-deployer-git --save</code></li>
+</ul>
+</li>
+<li>输入命令：<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
+<li>在浏览器地址栏输入      用户名.github.io<br>  这里的用户名就是你的GitHub用户名</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/02/25/Hexo主题添加打赏功能/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          Hexo 博客添加打赏功能
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/02/24/Http-Tomcat-Servlet/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Http&amp;&amp;Tomcat&amp;&amp;Servlet</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+  
+  
+  
+
+    
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="����"></a>
+        <span class="donate_txt">
+           &uarr;<br>
+           欣赏此文？求鼓励，求支持,老板打赏一下呗！
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+       
+        
+        <div align="center">
+        <img src="/img/weixin.jpg" width="150px" height="90px" alt="΢�Ŵ���">  
+        </div>
+	</div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+
+
+  
+  
+  
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+<!--MOB SHARE BEGIN-->
+<div class="-mob-share-ui-button -mob-share-open">分享</div>
+<div class="-mob-share-ui" style="display: none">
+    <ul class="-mob-share-list">
+        <li class="-mob-share-weibo"><p>新浪微博</p></li>
+        <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+        <li class="-mob-share-qzone"><p>QQ空间</p></li>
+        <li class="-mob-share-qq"><p>QQ好友</p></li>
+        <li class="-mob-share-renren"><p>人人网</p></li>
+        <li class="-mob-share-kaixin"><p>开心网</p></li>
+        <li class="-mob-share-douban"><p>豆瓣</p></li>
+        <li class="-mob-share-facebook"><p>Facebook</p></li>
+        <li class="-mob-share-twitter"><p>Twitter</p></li>
+    </ul>
+    <div class="-mob-share-close">取消</div>
+</div>
+<div class="-mob-share-ui-bg"></div>
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=234cab98e7fd8"></script>
+<!--MOB SHARE END-->  
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+
+
+
+
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2017 邓敏的博客
+      </div>
+	  
+	
+       
+
+	   <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/js/main.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
